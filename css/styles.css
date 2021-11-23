@@ -89,6 +89,10 @@ ul {
   list-style: none;
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -164,8 +168,8 @@ ul {
 }
 
 .navigation-link {
-  color: var(--link-color);
   margin-left: 50px;
+  color: var(--link-color);
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -192,10 +196,6 @@ ul {
   display: flex;
   align-items: center;
   padding-right: 50px;
-}
-
-.site-nav .header-link.current {
-  color: var(--accent-color);
 }
 
 /* ------HERO------ */
@@ -257,6 +257,12 @@ ul {
   margin: 0 auto;
   padding: 10px 32px;
   border: 1px solid transparent;
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 .btn {
@@ -265,8 +271,8 @@ ul {
   padding: 6 px 22 px;
   font-style: inherit;
   border-radius: 4 px;
-  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* Sections */
@@ -591,6 +597,8 @@ ul {
 .menu-button:focus {
   background-color: var(--accent-color);
   color: var(--second-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .portfolio {
