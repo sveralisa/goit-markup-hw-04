@@ -38,8 +38,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-
-  /*outline: 2px solid blue; */
 }
 
 .section {
@@ -76,6 +74,7 @@ img {
 a {
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
 }
 
 p,
@@ -165,6 +164,7 @@ ul {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .navigation-link {
@@ -187,10 +187,9 @@ ul {
   justify-content: center;
   margin-right: 10px;
 }
-
 .header-svg:hover,
 .header-svg:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-item {
@@ -581,6 +580,7 @@ ul {
   margin-bottom: -30px;
 }
 .portfolio-item {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   margin-right: 30px;
