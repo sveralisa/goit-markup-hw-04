@@ -416,25 +416,19 @@ ul {
 }
 
 .team-social-item {
-  border: none;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
   width: 44px;
   height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  color: #afb1b8;
-}
-.team-social-item:hover,
-.team-social-item:focus {
-  background-color: var(--accent-color);
+  margin-right: 10px;
 }
 
 .team-social-link {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border-radius: 50%;
   justify-content: center;
   display: block;
-  margin-right: 10px;
+  color: #afb1b8;
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -456,28 +450,35 @@ ul {
 /* ----------CLIENTS--------- */
 .regular-clients-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.regular-clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  padding: 16px 32px;
+  color: #afb1b8;
 }
 
-.regular-clients-link:hover,
-.regular-clients-link:focus {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients-svg {
   width: 106px;
   height: 60px;
+  fill: currentColor;
 }
 
 /* ------FOOTER------ */
@@ -522,6 +523,7 @@ ul {
 }
 
 .footer-social {
+  justify-content: center;
   margin-left: 70px;
 }
 
@@ -537,16 +539,17 @@ ul {
 
 .footer-social-list {
   display: flex;
-  justify-content: center;
+  align-items: baseline;
 }
 
 .footer-social-item {
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
 }
 .footer-social-item:not(:last-child) {
@@ -560,12 +563,11 @@ ul {
 
 .footer-social-link {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-social-svg {
-  width: 20px;
-  height: 20px;
+  align-items: center;
   fill: #ffffff;
 }
 
